@@ -9,7 +9,7 @@
 
 #include "common/safe_io.h"
 #include "os/btrfs_ioctl.h"
-
+//test
 void do_open_wr(const char *fname, int *fd)
 {
 	*fd = open(fname, O_WRONLY | O_CREAT, 0644);
@@ -166,6 +166,6 @@ int main(int argc, char *argv[])
 		do_snap_destroy(fd, snap_name);
 		close(fd);
 	}
-	
+
 	return 0;
 }
